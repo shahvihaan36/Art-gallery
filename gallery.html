@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Image Gallery with Video Background</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  
+  <video autoplay muted loop id="bg-video">
+    <source src="asse/naturevideo.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  
+  <div class="overlay"></div>
+
+  <header class="hero">
+    <h1><u> Explore the World </u></h1><br>
+    <p>Discover the beauty of nature, cities, and wildlife.</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image" data-category="nature">
+      <img src="asse/nature.jpg" alt="Nature">
+      <div class="caption">Peaceful Nature</div>
+    </div>
+    <div class="image" data-category="city">
+      <img src="asse/city.jpg" alt="City">
+      <div class="caption">Urban Skyline</div>
+    </div>
+    <div class="image" data-category="animals">
+      <img src="asse/animal.jpg" alt="Animals">
+      <div class="caption">Wildlife Beauty</div>
+    </div>
+    <div class="image" data-category="nature">
+      <img src="asse/Rocky Mountains.jpeg" alt="Mountains">
+      <div class="caption">Majestic Mountains</div>
+    </div>
+    <div class="image" data-category="city">
+      <img src="asse/Bora Bora.jpeg" alt="Beach">
+      <div class="caption">Seaside Paradise</div>
+    </div>
+    <div class="image" data-category="animals">
+      <img src="asse/New York.jpeg" alt="City">
+      <div class="caption">New York City Lights</div>
+    </div>
+  </div>
+
+  
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div class="nav">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <footer>
+    <p><b><strong> Made by Vihaan Amit Shah <br><br> contactno:-9404032324<br>Email Id:-vihaanamitshah.07@gmail.com </strong></b> </p>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
